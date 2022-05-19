@@ -1,0 +1,23 @@
+@import "base";
+
+.container, .header__container {
+  max-width: 1640px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+}
+
+.container_small {
+  max-width: 1400px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+
+@import "light__header";
+
+@import "publications__section-two";
+
+@import "homepage_section_fourth";
+
+@import "footer";

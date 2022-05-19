@@ -1,0 +1,163 @@
+.team__section-main {
+  padding: 60px 0;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px ;
+  }
+
+  &__title {
+    @include hero_red;
+
+  }
+
+  &__block__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  .team__cart__wrapper {
+    max-width: 493px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .team__cart__image{
+    margin-bottom: 15px;
+  }
+
+  .team__cart__text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+  .name__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+  }
+
+  .team__cart__arrow {
+    width: 32px;
+    height: 32px;
+    background: $bg_main;
+    border-radius: 50%;
+    padding: 9px 11px 8px 13px;
+  }
+
+  .arrow {
+    width: 11px;
+    height: 11px;
+    border-top: 2px solid $color_active_regular;
+    border-right: 2px solid $color_active_regular;
+    transform: rotate(45deg);
+    margin: 2px 0 0 -4px;
+    transition: 0.2s ease;
+  }
+
+
+
+  .team__cart__name {
+    @include h4;
+    color: $main_color;
+    margin-bottom: 5px;
+    transition: 0.2s ease;
+  }
+  .team__cart__name:hover {
+    color: $color_accent;
+  }
+
+  .team__cart__name:hover + .team__cart__arrow .arrow {
+    border-top: 2px solid $color_accent;
+    border-right: 2px solid $color_accent;
+  }
+
+  .team__cart__job {
+    @include paragraph__small;
+    color: $text;
+  }
+
+}
+
+@media screen and (max-width: 1919px){
+  .container {
+    max-width: 1360px;
+
+  }
+  .team__section-main {
+
+    .team__cart__wrapper {
+      max-width: 400px;
+    }
+
+
+  }
+
+}
+
+@media screen and (max-width: 1439px) {
+  .container {
+    max-width: 944px;
+  }
+
+  .team__section-main {
+
+
+    .team__cart__wrapper {
+      max-width: 260px;
+
+    }
+  }
+
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 688px;
+  }
+
+  .team__section-main {
+
+    .team__cart__wrapper {
+      max-width: 290px;
+
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 335px;
+
+  }
+
+  .team__section-main {
+    padding: 30px 0 60px 0;
+
+    &__wrapper {
+      gap: 30px ;
+    }
+
+    &__title {
+      @include hero_red__mobile;
+    }
+
+    &__block__wrapper {
+      flex-direction: column;
+      gap: 30px;
+    }
+    .team__cart__wrapper {
+      max-width: 315px;
+    }
+
+  }
+
+}

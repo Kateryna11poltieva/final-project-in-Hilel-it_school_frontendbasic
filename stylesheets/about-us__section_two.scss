@@ -1,0 +1,162 @@
+.about-us__section_two {
+  padding: 60px 0;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &__block-one {
+    max-width: 942px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 30px;
+    gap: 28px;
+  }
+
+  .block-one__title {
+    @include hero_red;
+  }
+
+  .block-one__text {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    color: #000000;
+
+  }
+
+  &__block-two {
+    max-width: 354px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 322px;
+    justify-content: space-between;
+    padding-left: 30px;
+    border-left: 4px solid $separator;
+  }
+
+  .block-two__cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+
+    &__title {
+      display: inline-flex;
+      gap: 12px;
+
+      &__text {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        background: $gradient_red_text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    &__paragraph {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: $main_color;
+
+    }
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .container {
+    max-width: 1400px;
+  }
+
+  .about-us__section_two {
+
+    &__block-one {
+      max-width: 700px;
+    }
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .container {
+    max-width: 944px;
+  }
+  .about-us__section_two {
+
+    &__block-one {
+      max-width: 520px;
+
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 688px;
+  }
+  .about-us__section_two {
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    &__block-one {
+      max-width: 650px;
+      gap: 28px;
+      padding-right: 0;
+    }
+
+    &__block-two {
+      max-width: 614px;
+      height: 302px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 355px;
+  }
+
+  .about-us__section_two {
+    padding: 30px 0;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    &__block-one {
+      max-width: 345px;
+      padding-right: 0;
+    }
+
+    .block-one__title {
+      @include hero_red__mobile;
+    }
+
+    &__block-two {
+      max-width: 281px;
+    }
+  }
+
+
+}

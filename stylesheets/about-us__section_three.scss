@@ -1,0 +1,63 @@
+.about-us__section_three {
+  width: 100%;
+  padding: 336px 0 231px 0;
+  background-image: url("../images/team.jpg");
+  background-position: center;
+  background-size: cover;
+
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 117px;
+    letter-spacing: 63px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.8;
+    text-shadow: 0 15px 30px rgba(40, 40, 86, 0.8);
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .about-us__section_three {
+    padding: 136px 0 158px 0;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .about-us__section_three {
+    padding: 103px 0 104px 0;
+
+    &__title {
+      font-weight: 700;
+      font-size: 86px;
+      line-height: 105px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1023px) {
+  .about-us__section_three {
+    padding: 89px 0;
+
+    &__title {
+      font-weight: 700;
+      font-size: 46px;
+      line-height: 56px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-us__section_three {
+    padding: 35px 0;
+
+    &__title {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 44px;
+      letter-spacing: 33px;
+    }
+  }
+}

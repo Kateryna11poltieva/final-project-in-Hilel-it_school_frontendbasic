@@ -1,0 +1,14 @@
+@import "base";
+
+.container, .header__container {
+  max-width: 1640px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+}
+
+@import "light__header";
+
+@import "contacts__section__two";
+
+@import "contact__footer";

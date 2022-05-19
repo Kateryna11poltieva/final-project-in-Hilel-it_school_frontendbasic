@@ -1,0 +1,163 @@
+.about-us__section_five {
+  padding: 30px 0;
+  background-color: $bg_main;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    @include h3caps;
+    color: $main_color;
+  }
+
+  &__brands__cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 110px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+
+  }
+
+  .slick_wrapper .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  .slick_wrapper .slick-dots li {
+    list-style: none;
+    margin: 0 15px;
+  }
+
+  .slick_wrapper .slick-dots button {
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 0;
+    background-color: $color_active_regular;
+    opacity: 20%;
+    transition: 0.2s ease;
+  }
+
+  .slick_wrapper .slick-dots button:hover {
+    opacity: 100%;
+  }
+
+  .slick_wrapper .slick-dots li.slick-active button {
+    opacity: 100%;
+  }
+
+
+}
+
+@media screen and (max-width: 1919px) {
+  .container {
+    max-width: 1400px;
+  }
+  .about-us__section_five {
+
+    &__brands {
+
+      &__cart {
+        width: 300px;
+      }
+
+      .legal {
+        padding: 25px 110px;
+
+      }
+
+      .awards {
+        padding: 25px 70px;
+
+      }
+
+      .liders {
+        padding: 25px 53px;
+      }
+
+      .ulg {
+        padding: 25px 67px;
+
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .container {
+    max-width: 944px;
+  }
+  .about-us__section_five {
+
+    &__brands {
+
+      &__cart {
+        width: 196px;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 688px;
+  }
+  .about-us__section_five {
+
+    &__brands {
+
+      &__cart {
+        width: 132px;
+        height: 90px;
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 355px;
+  }
+  .about-us__section_five {
+
+    &__brands {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+
+      &__cart {
+        width: 255px;
+        height: 90px;
+        margin: 0 auto;
+      }
+
+      .brands__cart__img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 70%;
+      }
+
+    }
+
+
+  }
+
+}
